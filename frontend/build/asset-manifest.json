@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.394a13cd.css",
+    "main.js": "/static/js/main.5ceda68b.js",
+    "static/media/Python Got That Flow.mp3": "/static/media/Python Got That Flow.5ba1eb80c046bb2a16ec.mp3",
+    "static/media/Bug Hunt.mp3": "/static/media/Bug Hunt.5b282eec20e1c2106d46.mp3",
+    "static/media/build it up V.2.mp3": "/static/media/build it up V.2.bb749baadc6aca3a492f.mp3",
+    "static/media/Build That DB.mp3": "/static/media/Build That DB.0f787d645587d1ba185c.mp3",
+    "static/media/JavaScript.mp3": "/static/media/JavaScript.c3645213f989010047bc.mp3",
+    "static/media/Hello.mp3": "/static/media/Hello.1a53bfedb46a60045c38.mp3",
+    "static/media/Code Like a Pro.mp3": "/static/media/Code Like a Pro.842e400455735c7424b6.mp3",
+    "static/media/Code and Ctrl+Z.mp3": "/static/media/Code and Ctrl+Z.e03fe46f952127e6a88e.mp3",
+    "static/media/local2live.mp3": "/static/media/local2live.5bbd7a1b1695a5a8e7a8.mp3",
+    "static/media/reactv2.mp3": "/static/media/reactv2.4039a4f6259df32c751d.mp3",
+    "static/media/Git it Render it.mp3": "/static/media/Git it Render it.32263d08e9527d943d8f.mp3",
+    "static/media/Cover.png": "/static/media/Cover.88eff997728921bd10f8.png",
+    "index.html": "/index.html",
+    "main.394a13cd.css.map": "/static/css/main.394a13cd.css.map",
+    "main.5ceda68b.js.map": "/static/js/main.5ceda68b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.394a13cd.css",
+    "static/js/main.5ceda68b.js"
+  ]
+}

@@ -1,0 +1,258 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components'; 
+@import 'tailwindcss/utilities';
+
+/* Custom Dubstep-themed styles */
+
+/* Glitch text effect */
+.glitch-text {
+  position: relative;
+  animation: glitch 2s linear infinite;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  animation: glitch-1 0.5s linear infinite reverse;
+  color: #00ffff;
+  z-index: -1;
+}
+
+.glitch-text::after {
+  animation: glitch-2 0.5s linear infinite reverse;
+  color: #ff00ff;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0%, 100% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+}
+
+@keyframes glitch-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(-2px, 2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* Custom volume slider */
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: linear-gradient(to right, #8b5cf6, #a855f7);
+  border-radius: 2px;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.volume-slider:hover {
+  opacity: 1;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ffff, #8b5cf6);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00ffff, #8b5cf6);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00ffff, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #22d3ee, #a855f7);
+}
+
+/* Pulsing background elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Neon glow effects */
+.neon-border {
+  box-shadow: 
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 15px #00ffff,
+    0 0 20px #8b5cf6,
+    inset 0 0 5px rgba(139, 92, 246, 0.2);
+}
+
+/* Audio visualization bars */
+@keyframes wave-1 {
+  0%, 100% { height: 16px; }
+  50% { height: 32px; }
+}
+
+@keyframes wave-2 {
+  0%, 100% { height: 24px; }
+  50% { height: 40px; }
+}
+
+@keyframes wave-3 {
+  0%, 100% { height: 12px; }
+  50% { height: 28px; }
+}
+
+/* Album cover styling */
+.album-cover {
+  transition: transform 0.3s ease;
+}
+
+.album-cover:hover {
+  transform: scale(1.02);
+}
+
+/* Album cover glow effect when playing */
+.album-cover.playing {
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.3),
+    0 0 40px rgba(139, 92, 246, 0.2),
+    0 0 60px rgba(139, 92, 246, 0.1);
+  animation: albumGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes albumGlow {
+  from {
+    box-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.3),
+      0 0 40px rgba(139, 92, 246, 0.2),
+      0 0 60px rgba(139, 92, 246, 0.1);
+  }
+  to {
+    box-shadow: 
+      0 0 30px rgba(0, 255, 255, 0.4),
+      0 0 50px rgba(139, 92, 246, 0.3),
+      0 0 70px rgba(139, 92, 246, 0.2);
+  }
+}
+@media (max-width: 768px) {
+  .glitch-text {
+    font-size: 2.5rem;
+  }
+  
+  .container {
+    padding: 1rem;
+  }
+}
+
+/* Dark mode enhancements */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Additional cyberpunk elements */
+.cyber-grid {
+  background-image: 
+    linear-gradient(rgba(139, 92, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Button hover effects */
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+}
+
+/* Track hover effects */
+.track-item:hover {
+  transform: translateX(4px);
+  background: linear-gradient(90deg, rgba(0, 255, 255, 0.1), rgba(139, 92, 246, 0.1));
+}
