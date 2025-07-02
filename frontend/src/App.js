@@ -12,6 +12,7 @@ import track8 from './assets/local2live.mp3'
 import track9 from './assets/Python Got That Flow.mp3'
 import track10 from './assets/build it up V.2.mp3'
 import track12 from './assets/Hello.mp3'
+import track11 from './assets/Dreaming in Code.mp3'
 
 const ALBUM_DATA = {
   title: "Hello, World!",
@@ -29,7 +30,7 @@ const ALBUM_DATA = {
     { id: 8, title: "Local2Live", duration: "4:08", file: track8 },
     { id: 9, title: "Python Got That Flow(E)", duration: "3:33", file: track9 },
     { id: 10, title: "Build it up", duration: "4:25", file: track10 },
-    { id: 11, title: "Terminal Velocity", duration: "3:50", file: "/audio/track11.mp3" },
+    { id: 11, title: "Dreaming in Code", duration: "3:50", file: track11 },
     { id: 12, title: "Hello, World!", duration: "5:12", file: track12 }
   ]
 };
