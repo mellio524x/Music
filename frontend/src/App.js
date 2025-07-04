@@ -21,17 +21,17 @@ const ALBUM_DATA = {
   coverArt: coverArt, 
   tracks: [
     { id: 1, title: "Just JavaScript", duration: "3:28", file: track1 },
-    { id: 2, title: "Code like a Pro", duration: "4:15", file: track2 },
+    { id: 2, title: "Code like a Pro", duration: "3:09", file: track2 },
     { id: 3, title: "React", duration: "3:28", file: track3 },
-    { id: 4, title: "Build that DB", duration: "4:03", file: track4 },
-    { id: 5, title: "Bug Hunt", duration: "3:55", file: track5 },
-    { id: 6, title: "Git it Render it", duration: "4:22", file: track6 },
-    { id: 7, title: "Code and Ctrl+Z", duration: "3:17", file: track7 },
-    { id: 8, title: "Local2Live", duration: "4:08", file: track8 },
-    { id: 9, title: "Python Got That Flow(E)", duration: "3:33", file: track9 },
-    { id: 10, title: "Build it up", duration: "4:25", file: track10 },
-    { id: 11, title: "Dreaming in Code", duration: "3:50", file: track11 },
-    { id: 12, title: "Hello, World!", duration: "5:12", file: track12 }
+    { id: 4, title: "Build that DB", duration: "3:23", file: track4 },
+    { id: 5, title: "Bug Hunt", duration: "3:57", file: track5 },
+    { id: 6, title: "Git it Render it", duration: "2:07", file: track6 },
+    { id: 7, title: "Code and Ctrl+Z", duration: "2:57", file: track7 },
+    { id: 8, title: "Local2Live", duration: "4:00", file: track8 },
+    { id: 9, title: "Python Got That Flow(E)", duration: "3:56", file: track9 },
+    { id: 10, title: "Build it up", duration: "3:24", file: track10 },
+    { id: 11, title: "Dreaming in Code", duration: "3:23", file: track11 },
+    { id: 12, title: "Hello, World!", duration: "3:25", file: track12 }
   ]
 };
 
